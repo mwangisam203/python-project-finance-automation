@@ -5,7 +5,7 @@ import plotly.express as px
 import json
 import os
 
-st.set_page_config(page_title="Simple Finance App", page_icon="😎", layout="wide")
+st.set_page_config(page_title="My Ideal Finance App", page_icon="💰💰😎", layout="wide")
 
 category_file = "categories.json"
 
@@ -61,7 +61,7 @@ def add_keyword_to_category(category, keyword):
         return True
 
 def main():
-    st.title("My Finance Dashboard")
+    st.title("My Xpress € 💶 Dashboard")
 
     uploaded_file = st.file_uploader("Upload your transaction file", type=["csv"])
 
