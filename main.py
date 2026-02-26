@@ -8,10 +8,7 @@ st.set_page_config(page_title="My Ideal Finance App", page_icon="💰💰😎", 
 
 CATEGORY_FILE = "categories.json"
 
-
-# -----------------------------
 # Categories: load/save
-# -----------------------------
 def default_categories():
     return {"Uncategorized": []}
 
@@ -39,9 +36,8 @@ if "categories" not in st.session_state:
     st.session_state.categories = load_categories()
 
 
-# -----------------------------
 # Categorization
-# -----------------------------
+
 def categorize_transactions(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     df["Category"] = "Uncategorized"
@@ -110,9 +106,9 @@ def add_keyword_to_category(category: str, keyword: str) -> bool:
     return False
 
 
-# -----------------------------
+
 # App UI
-# -----------------------------
+
 def main():
     st.title("My Xpress € 💶 Dashboard")
 
